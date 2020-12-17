@@ -7,28 +7,27 @@ body{
     font-family: 'Noto Sans TC', sans-serif;
     background-image: url("./101.jpg");
     background-size: cover;
-    display: flex;
+    display: flex;    
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-position: center center;
     min-height: 100vh;
-    margin: 0;
 }
 .main-container{
-    min-width: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(255, 255, 255, 0.5) ;
-}
+    margin: auto;  
+    padding: 10px;  
+}   
 .countdown-container{
-    display: flex;
+    margin: auto;
+    max-width:100%
 }
 
 h1{
     font-size: 90px;
+    text-align: center;
+    margin: auto;
 }
 
 .big-text{
@@ -42,4 +41,29 @@ h1{
     font-size: 50px;
     margin: 0px 20px 20px;
     text-align: center;
+}
+
+@media screen and (min-width:415px){
+    body{
+        display: flex;
+    }
+    .main-container{
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .countdown-container{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:320px){
+    h1{
+        font-size: 60px;
+    }
+    .big-text{
+        font-size: 50px
+    }
 }
