@@ -3,7 +3,7 @@ const hoursEL = document.getElementById('hours');
 const minsEL = document.getElementById('mins');
 const secondsEL = document.getElementById('seconds');
 
-const newYears = '1 jan 2021';
+const newYears = '1 jan 2022';
 
 
 
